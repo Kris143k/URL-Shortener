@@ -23,13 +23,14 @@ async function getUser(token) {
 // function getUser(id) {
 //   return sessionToUserMap.get(id);
 // }
-function getUser(token) {
-  try {
-    const user = jwt.verify(token, secret);
-    return user;
-  } catch (err) {
-    return null;
-  }
+function setUser(user) {
+  const token = jwt.sign({
+    email: user.email,
+    name: user.name,
+    id: user._id,
+    roles: user.roles,
+  }, secret);
+  return token;
 }
 
 module.exports = {
