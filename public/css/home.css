@@ -1,0 +1,160 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px 0;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 200px;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.result {
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    background: #e8f4fc;
+    border-radius: 6px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.result a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+    word-break: break-all;
+}
+
+.result a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+tr:hover {
+    background-color: #e8f4fc;
+}
+
+td {
+    word-break: break-word;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    th, td {
+        padding: 10px 5px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
