@@ -62,7 +62,7 @@ C:.
 1. **Clone the repository:**
 
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/Kris143k/URL-Shortener
    cd urlshortener
    ```
 
